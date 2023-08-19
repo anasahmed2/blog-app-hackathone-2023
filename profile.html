@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="spiner-container" id="spiner">
+        <div class="loading">
+            <h1>Please Wait</h1>
+            <div class="spiner">
+                <div class="spinner-container">
+                    <div class="spinner">
+                        <div class="spinner">
+                            <div class="spinner">
+                                <div class="spinner">
+                                    <div class="spinner">
+                                        <div class="spinner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-blog">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-lg">
+                <a class="navbar-brand">Personal Blog App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./blog.html">Blog Page</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </div>
+    <div class="logins-container animate__animated animate__flipInX">
+        <div class="profile-body">
+            <div class="welcome_profile">
+                <h1>Profile</h1>
+               <div class="blog-go welcome_profile">
+                   <h6>Blog Page</h6>
+                   <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14.902 19.512C13.831 20.583 12 19.825 12 18.31V16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h8V5.69c0-1.515 1.831-2.273 2.902-1.202l6.453 6.451a1.5 1.5 0 0 1 0 2.121l-6.453 6.452Z"/></g></svg></a>
+
+               </div>
+            </div>
+            <div class="input-container">
+                <div class="welcome_profile">
+                    <div class="profile-container welcome_profile">
+                        <img src="asset/person-circle.svg" alt="" id="profilePicture">
+                        <label class="camera-icon" id="cameraPro" for="fileInput">
+                            <i class="bi bi-camera-fill"></i>
+                        </label>
+                        <input type="file" class="display" id="fileInput">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="input-container">
+                <div class="form">
+                    <input class="input" placeholder="Full Name" required id="fullName" type="text" disabled>
+                    <span class="input-border"></span>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="form">
+                    <input class="input" placeholder="Email" required id="email" type="text" disabled>
+                    <span class="input-border"></span>
+                </div>
+            </div>
+            <div class="input-container">
+                <button class="signin-btns color-s" id="updateBtn">Update profile</button>
+            </div>
+            <div class="input-container">
+                <button class="signin-btns color-g" id="Logout">Sign Out</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="javascript/app.js"></script>
+</body>
+
+</html>

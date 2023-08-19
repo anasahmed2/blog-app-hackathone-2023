@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div class="spiner-container" id="spiner">
+        <div class="loading">
+            <h1>Please Wait</h1>
+        <div class="spiner">
+            <div class="spinner-container">
+                <div class="spinner">
+                 <div class="spinner">
+                  <div class="spinner">
+                    <div class="spinner">
+                      <div class="spinner">
+                          <div class="spinner"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    <!-- login from-->
+    <div class="logins-container animate__animated animate__flipInX">
+        <div class="logins-body">
+            <div class="welcome_text">
+                <h4>Blog Application</h4>
+            </div>
+            <div class="welcome_text">
+                <h2>Sign Up</h2>
+                <span>Enter your details to create your account</span>
+            </div>
+            <div class="input-container divided-flex">
+                <div class="divided">
+                    <div class="form">
+                        <input class="input" id="fullName" placeholder="Full Name" required="" type="text">
+                        <span class="input-border"></span>
+                    </div>
+                </div>
+                <div class="divided">
+                    <div class="form">
+                        <input class="input" placeholder="Phone" id="phone" required="" type="number">
+                        <span class="input-border"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="form">
+                    <input class="input" id="email" placeholder="Email" required="" type="text">
+                    <span class="input-border"></span>
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="form">
+                    <input class="input pad-right" placeholder="Password" required="" id="password"
+                        type="password">
+                    <span class="input-border"></span>
+                    <div class="show-password" id="showPassword"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                            height="32" viewBox="0 0 15 15">
+                            <path fill="currentColor"
+                                d="M7.5 9C5.186 9 3.561 7.848 2.497 6.666a9.368 9.368 0 0 1-1.449-2.164a5.065 5.065 0 0 1-.08-.18l-.004-.007v-.001L.5 4.5l-.464.186v.002l.003.004a2.107 2.107 0 0 0 .026.063l.078.173a10.367 10.367 0 0 0 1.61 2.406C2.94 8.652 4.814 10 7.5 10V9Zm7-4.5a68.887 68.887 0 0 1-.464-.186l-.003.008l-.015.035l-.066.145a9.37 9.37 0 0 1-1.449 2.164C11.44 7.848 9.814 9 7.5 9v1c2.686 0 4.561-1.348 5.747-2.666a10.365 10.365 0 0 0 1.61-2.406a6.164 6.164 0 0 0 .104-.236l.002-.004v-.001h.001L14.5 4.5ZM8 12V9.5H7V12h1Zm-6.646-1.646l2-2l-.708-.708l-2 2l.708.708Zm10.292-2l2 2l.708-.708l-2-2l-.708.708Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <button class="signin-btns color-s" id="signupBtn">Sign Up</button>
+            </div>
+            <div class="signUp-go">
+                <p>Already have an account ?</p><a href="start.html"> Sign In!</a>
+            </div>
+        </div>
+    </div>
+ <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="javascript/app.js"></script>
+</body>
+
+</html>

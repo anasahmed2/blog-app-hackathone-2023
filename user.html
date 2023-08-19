@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="spiner-container" id="spiner">
+        <div class="loading">
+            <h1>Please Wait</h1>
+            <div class="spiner">
+                <div class="spinner-container">
+                    <div class="spinner">
+                        <div class="spinner">
+                            <div class="spinner">
+                                <div class="spinner">
+                                    <div class="spinner">
+                                        <div class="spinner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container-blog">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-lg">
+                <a class="navbar-brand">Personal Blog App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " aria-current="page" href="profile.html" id="fullName"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " aria-current="page" id="Logout">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="dashboards">
+            <h1 class="color-purple"> <a class="back-arrow" href="blog.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="32" height="32" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+                            <path fill="currentColor"
+                                d="M14.902 19.512C13.831 20.583 12 19.825 12 18.31V16H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h8V5.69c0-1.515 1.831-2.273 2.902-1.202l6.453 6.451a1.5 1.5 0 0 1 0 2.121l-6.453 6.452Z" />
+                        </g>
+                    </svg></a>Back to All Blogs </h1>
+        </div>
+    </div>
+
+    <div class="container-lg colorss">
+        <div class="create-post">
+            <div class="create-post-container post-profile-container mt-4">
+                <main class="main-area container-lg mt-4 d-flex ">
+                    <div class="row width-set flex-wrap-reverse">
+
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                            <div class="head-blog">
+                                <h3>All Blog</h3>
+                            </div>
+                            <div id="user-blog-add">
+                            </div>
+                        </div>
+                        <div class=" col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="welcome_profile mb-2">
+                                <h1>Profile</h1>
+                            </div>
+                            <div id="profile"></div>
+                          
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <script src="javascript/bootstarp.js"></script>
+            <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type="module" src="javascript/app.js"></script>
+            <script>
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                const selectedUid = urlParams.get('useruid');
+            </script>
+</body>
+
+</html>
