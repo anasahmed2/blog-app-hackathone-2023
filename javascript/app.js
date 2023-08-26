@@ -6,14 +6,7 @@ import {
 import { getFirestore, doc, setDoc, getDoc, updateDoc, collection, query, where, getDocs, deleteDoc, addDoc, serverTimestamp, onSnapshot } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 import { getStorage, ref, uploadBytes, uploadBytesResumable, getDownloadURL, deleteObject } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-storage.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyDSqy4jkY2687yTzDkRkAc1hBom0wNRhE8",
-    authDomain: "test-8af56.firebaseapp.com",
-    databaseURL: "https://test-8af56-default-rtdb.firebaseio.com",
-    projectId: "test-8af56",
-    storageBucket: "test-8af56.appspot.com",
-    messagingSenderId: "397549701977",
-    appId: "1:397549701977:web:8e39ceebc711c4cf5c9a48",
-    measurementId: "G-B2C0Y6X7TB"
+ 
 };
 
 const app = initializeApp(firebaseConfig);
